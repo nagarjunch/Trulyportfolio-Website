@@ -3,17 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
     <title>Truly Visual Studio</title>
-    <link rel="stylesheet" href="content/css/style.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
-<body>
 
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="content/images/logo.svg  "></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: flex-end;">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#whatwedo">What we do <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#contactus">Contact us</a>
+        </div>
+    </div>
+</nav>
+
+<div id="main-content">
+    <section id="whatwedo" class="container" style="min-height: 500px">
+        what we do
+    </section>
+    <section id="portfolio" class="container" style="min-height: 500px">
+        what we do
+    </section>
+    <section id="contactus" class="container" style="min-height: 500px">
+        what we do
+    </section>
+</div>
+
+<section id="footer">
+    <div class="row footer-content">
+        <div class="col-md-3 col-sm-6 col-12">
+            <ul class="links-list">
+                <li class="title">Services</li>
+                <li class="link"><a href="#contactus">Branding</a></li>
+                <li class="link"><a href="#contactus">UI Design</a></li>
+                <li class="link"><a href="#contactus">UX Design</a></li>
+                <li class="link"><a href="#contactus">Development</a></li>
+                <li class="link"><a href="#contactus">Digital Marketing</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-12">
+            <ul class="links-list">
+                <li class="title">About Us</li>
+                <li class="link"><a href="#contactus">Studio</a></li>
+                <li class="link"><a href="#contactus">Team</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-12">
+            <ul class="links-list">
+                <li class="title">More</li>
+                <li class="link"><a href="#contactus">Case Studies</a></li>
+                <li class="link"><a href="#contactus">Blog</a></li>
+                <li class="link"><a href="#contactus">Careers</a></li>
+            </ul>
+        </div>
+        <div class="col-md-5 col-sm-6 col-12">
+            <ul class="links-list border-left">
+                <li class="title">Contact us</li>
+                <li class="link"><a href="#contactus">Business Queries</a></li>
+                <li class="link"><a href="#contactus" class="font-lt-lg">+91 96 40 93 93 91</a></li>
+                <li class="link"><a href="#contactus" class="font-lt-lg">+91 89 19 18 95 95</a></li>
+                <li class="title">hello@trulyvisualstudio.com</li>
+                <li class="link"><a href="#contactus">Address<br/>
+                    Hyderabad, India
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social-links">
+            <div class="col-md-4 col-sm-12 col-12">
+                <div class="font-lt-sm">Follow us</div>
+                <div class="social-images">
+                    <a href="#"><img src="content/images/social/001-facebook-logo-button.svg"></a>
+                    <a href="#"><img src="content/images/social/001-twitter-logo-button.svg"></a>
+                    <a href="#"><img src="content/images/social/002-linkedin.svg"></a>
+                    <a href="#"><img src="content/images/social/003-instagram-logo.svg"></a>
+                    <a href="#"><img src="content/images/social/004-pinterest-logotype-circle.svg"></a>
+                    <a href="#"><img src="content/images/social/005-google-plus.svg"></a>
+
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 col-12">
+                <div class="font-lt-sm">Portfolio</div>
+                <div class="social-images">
+                    <a href="#"><img src="content/images/social/behance_logo.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row base-footer">
+        © 2019 Truly visual studio
+    </div>
+</section>
 
 <script src="libs/js/jquery-3.3.1.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/app.js"></script>
+<script>
+    $(document).ready(function () {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() >= 20) {
+                $(".navbar").addClass("shrinked");
+            } else {
+                $(".navbar").removeClass("shrinked");
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
